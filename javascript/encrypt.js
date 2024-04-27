@@ -7,7 +7,7 @@ const publicKey = new NodeRSA(publicKeyFile);
 console.log(`Key-Type : ${publicKey.isPublic() ? "Public Key" : "Private Key"}`);
 console.log(`Key-Type : ${publicKey.isPrivate() ? "Private Key" : "Public Key"}`);
 
-const message = "Hello World!";
+const message = "Linthujan";
 const encryptedData = publicKey.encrypt(message, 'base64');
 fs.writeFileSync("./data/encrypted.txt", encryptedData);
 
